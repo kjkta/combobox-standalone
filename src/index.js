@@ -428,6 +428,7 @@ export const ComboboxInput = forwardRef(function ComboboxInput(
       onChange={wrapEvent(onChange, handleChange)}
       onKeyDown={wrapEvent(onKeyDown, handleKeyDown)}
       id={listboxId}
+      autocomplete={autocomplete}
       aria-autocomplete="both"
       aria-activedescendant={
         navigationValue ? makeHash(navigationValue) : undefined
