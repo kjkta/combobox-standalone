@@ -360,6 +360,7 @@ var ComboboxInput = forwardRef(function ComboboxInput(_ref2, forwardedRef) {
     onKeyDown: wrapEvent(onKeyDown, handleKeyDown),
     id: listboxId,
     "aria-autocomplete": "both",
+    autocomplete: autocomplete,
     "aria-activedescendant": navigationValue ? makeHash(navigationValue) : undefined
   }));
 });
